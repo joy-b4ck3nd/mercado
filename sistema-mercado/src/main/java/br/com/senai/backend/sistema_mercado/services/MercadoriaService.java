@@ -2,6 +2,7 @@ package br.com.senai.backend.sistema_mercado.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import br.com.senai.backend.sistema_mercado.models.Mercadoria;
 import br.com.senai.backend.sistema_mercado.repositories.MercadoriaRepository;
 
@@ -14,7 +15,7 @@ public class MercadoriaService{
         return mercadoriaRep.save(mercadoria);
     }
 
-    public Mercadoria buscarPorId(Integer id){
+    public Mercadoria recuperarPorId(Integer id){
         return mercadoriaRep.findById(id).get();
     }
 

@@ -15,7 +15,7 @@ public class FuncionarioService{
         return funcionarioRep.save(funcionario);
     }
 
-    public Funcionario buscarPorId(Integer id){
+    public Funcionario recuperarPorId(Integer id){
         return funcionarioRep.findById(id).get();
     }
 
